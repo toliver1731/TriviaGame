@@ -1,79 +1,147 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Trivia Game</title>
+	<html>
+	<head>
+		<title>Trivia Game</title>
+
+		<!-- Link in CSS Files -->
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-		<script type="text/javascript" src=assets/javascript/app.js></script>
-		<script
-  					src="https://code.jquery.com/jquery-3.2.1.js"
-  					integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  					crossorigin="anonymous"></script>
-  	
-  
-</head>
-<body>
 
-	<h3 id = "question">1. The main character, Walter White, is played by which actor?</h3>
-		<input type="radio" name="q1" value="a" id= "q1a"><label for="q1a">Tom Hanks</label><br/>
-		<input type="radio" name="q1" value="b" id= "q1b"><label for="q1b">Bryan Cranston</label><br/>
-		<input type="radio" name="q1" value="c" id= "q1c"><label for="q1c">Aaron Paul</label><br/>
-		<input type="radio" name="q1" value="d" id= "q1d"><label for="q1d">Bob Odenkirk</label><br/>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
-	<h3 id = "question">2. What is the name of the fast food restaurant owned by Gus Firing? </h3>
-		<input type="radio" name="q2" value="a" id= "q2a"><label for="q2a">Chick Fil A</label><br/>
-		<input type="radio" name="q2" value="b" id= "q2b"><label for="q2b">McDonalds</label><br/>
-		<input type="radio" name="q2" value="c" id= "q2c"><label for="q2c">El Pollo Loco</label><br/>
-		<input type="radio" name="q2" value="d" id= "q2d"><label for="q2d">Los Pollos Hermanos</label><br/>
+		
+		<script src="assets/javascript/app.js"></script>
 
-	<h3 id = "question">3. Before they began cooking meth, how did Walter White and Jesse know each other? </h3>
-		<input type="radio" name="q3" value="a" id= "q3a"><label for="q3a">Jesse was one of Walt's former students</label><br/>
-		<input type="radio" name="q3" value="b" id= "q3b"><label for="q3b">They were former co-workers</label><br/>
-		<input type="radio" name="q3" value="c" id= "q3c"><label for="q3c">Jesse was Walt's drug dealer</label><br/>
-		<input type="radio" name="q3" value="d" id= "q3d"><label for="q3d">They didn't</label><br/>
+	</head>
+	<body>
 
-	<h3 id = "question">4. What color was Walt's famous meth? </h3>
-		<input type="radio" name="q4" value="a" id= "q4a"><label for="q4a">Blue</label><br/>
-		<input type="radio" name="q4" value="b" id= "q4b"><label for="q4b">Green</label><br/>
-		<input type="radio" name="q4" value="c" id= "q4c"><label for="q4c">White</label><br/>
-		<input type="radio" name="q4" value="d" id= "q4d"><label for="q4d">Red</label><br/>
+		
+		<div id = start_container>
+			
+			<img id = "bbLogo" src = "assets/images/BBlogo.png" height="300px" width="800px">
 
-	<h3 id = "question">5. What was Jesse and Walt's lawyer's name who later got his own spinoff show? </h3>
-		<input type="radio" name="q5" value="a" id= "q5a"><label for="q5a">Roger Smith</label><br/>
-		<input type="radio" name="q5" value="b" id= "q5b"><label for="q5b">Perry Mason</label><br/>
-		<input type="radio" name="q5" value="c" id= "q5c"><label for="q5c">Saul Goodman</label><br/>
-		<input type="radio" name="q5" value="d" id= "q5d"><label for="q5d">Ben Matlock</label><br/>
+					<br>
+					<br>
 
-	<h3 id = "question">6. What city and state does Breaking Bad take place in? </h3>
-		<input type="radio" name="q6" value="a" id= "q6a"><label for="q6a">Denver, CO</label><br/>
-		<input type="radio" name="q6" value="b" id= "q6b"><label for="q6b">Santa Fe, NM</label><br/>
-		<input type="radio" name="q6" value="c" id= "q6c"><label for="q6c">Phoenix, AZ</label><br/>
-		<input type="radio" name="q6" value="d" id= "q6d"><label for="q6d">Albuquerque, NM</label><br/>
 
-	<h3 id = "question">7. What does Walt use to kill drug dealer Nacho Varga in season 1? </h3>
-		<input type="radio" name="q7" value="a" id= "q7a"><label for="q7a">Gun</label><br/>
-		<input type="radio" name="q7" value="b" id= "q7b"><label for="q7b">Bike lock</label><br/>
-		<input type="radio" name="q7" value="c" id= "q7c"><label for="q7c">Chainsaw</label><br/>
-		<input type="radio" name="q7" value="d" id= "q7d"><label for="q7d">Forces him to overdose on meth</label><br/>
+			<button id = start_button>Start</button>
+		</div>
 
-	<h3 id = "question">8. What is Skyler White's sister's name? </h3>
-		<input type="radio" name="q8" value="a" id= "q8a"><label for="q8a">Marie</label><br/>
-		<input type="radio" name="q8" value="b" id= "q8b"><label for="q8b">Holly</label><br/>
-		<input type="radio" name="q8" value="c" id= "q8c"><label for="q8c">Sarah</label><br/>
-		<input type="radio" name="q8" value="d" id= "q8d"><label for="q8d">Jennifer</label><br/>
 
-	<h3 id = "question">9. Which agency does Walt's brother-in-law, Hank, work for? </h3>
-		<input type="radio" name="q9" value="a" id= "q9a"><label for="q9a">FBI</label><br/>
-		<input type="radio" name="q9" value="b" id= "q9b"><label for="q9b">ICE</label><br/>
-		<input type="radio" name="q9" value="c" id= "q9c"><label for="q9c">ATF</label><br/>
-		<input type="radio" name="q9" value="d" id= "q9d"><label for="q9d">DEA</label><br/>
+		
+		<div id = mid_game_container>
+			
+			<img id = "bbLogo" src = "assets/images/BBlogo.png" height="300px" width="800px">
 
-	<h3 id = "question">10. What is the name of the physicist that Walt uses as an alias? </h3>
-		<input type="radio" name="q10" value="a" id= "q10a"><label for="q10a">Albert Einstein</label><br/>
-		<input type="radio" name="q10" value="b" id= "q10b"><label for="q10b">Niels Bohr</label><br/>
-		<input type="radio" name="q10" value="c" id= "q10c"><label for="q10c">Werner Heisenberg</label><br/>
-		<input type="radio" name="q10" value="d" id= "q10d"><label for="q10d">Stephen Hawking</label><br/>
+			<h1 id = "timer_line">Time Remaining: <span id = "timer_number">90 Seconds</span></h1>
 
-			<button type="button" id="submit">Submit</button>
+			<h1>1. The main character, Walter White, is played by which actor?</h1>
+			
+				<input type="radio" name="q1" value="q1a">Tom Hanks 
+				<input type="radio" name="q1" value="q1b">Bryan Cranston 
+				<input type="radio" name="q1" value="q1c">Aaron Paul 
+				<input type="radio" name="q1" value="q1d">Bob Odenkirk 
+				
 
-</body>
+			<h1>2. What is the name of the fast food restaurant owned by Gus Firing?</h1>
+			
+				<input type="radio" name="q2" value="q2a">Chick Fil A
+				<input type="radio" name="q2" value="q2b">McDonalds
+				<input type="radio" name="q2" value="q2c">El Pollo Loco 
+				<input type="radio" name="q2" value="q2d">Los Pollos Hermanos
+
+
+
+			<h1>3. Before they began cooking meth, how did Walter White and Jesse know each other? </h1>
+			
+				<input type="radio" name="q3" value="q3a">Jesse was one of Walt's former students
+				<input type="radio" name="q3" value="q3b">They were former co-workers
+				<input type="radio" name="q3" value="q3c">Jesse was Walt's drug dealer
+				<input type="radio" name="q3" value="q4d">They didn't
+
+
+			<h1>4. What color was Walt's famous meth?</h1>
+			
+				<input type="radio" name="q4" value="q4a">blue
+				<input type="radio" name="q4" value="q4b">green
+				<input type="radio" name="q4" value="q4c">white
+				<input type="radio" name="q4" value="q4d">red
+				
+
+
+			<h1>5. What was Jesse and Walt's lawyer's name who later got his own spin off show?</h1>
+			
+				<input type="radio" name="q5" value="q5a">Roger Smith 
+				<input type="radio" name="q5" value="q5b">Perry Mason 
+				<input type="radio" name="q5" value="q5c">Saul Goodman
+				<input type="radio" name="q5" value="q5d">Ben Matlock
+				
+			
+			<h1>6. What city and stae does Breaking Bad take place in?</h1>
+			
+				<input type="radio" name="q6" value="q6a">Denver, CO 
+				<input type="radio" name="q6" value="q6b">Santa Fe, NM 
+				<input type="radio" name="q6" value="q6c">Phoenix, AZ 
+				<input type="radio" name="q6" value="q7d">Albuquerque, NM 
+				
+
+			<h1>7. What does Walt use to kill drug dealer Nacho Varga in season 1?</h1>
+			
+				<input type="radio" name="q7" value="q7a">gun
+				<input type="radio" name="q7" value="q7b">bike lock 
+				<input type="radio" name="q7" value="q7c">chainsaw 
+				<input type="radio" name="q7" value="q7d">forces him to OD on meth
+
+			<h1>8. What is Skyler WHite's sister's name?</h1>
+			
+				<input type="radio" name="q8" value="q8a">Marie 
+				<input type="radio" name="q8" value="q8b">Holly 
+				<input type="radio" name="q8" value="q8c">Sarah
+				<input type="radio" name="q8" value="q8d">Jennifer
+
+			<h1>9. Which agency does Walt's brother-in-law, Hank, work for?</h1>
+			
+				<input type="radio" name="q9" value="q9a">FBI 
+				<input type="radio" name="q9" value="q9b">ICE
+				<input type="radio" name="q9" value="q9c">ATF
+				<input type="radio" name="q9" value="q9d">DEA
+
+			<h1>10. What is the name of the physicist that Walt uses as an alias?</h1>
+			
+				<input type="radio" name="q10" value="q10a">Albert Einstein
+				<input type="radio" name="q10" value="q10b">Niels Bohr
+				<input type="radio" name="q10" value="q10c">Werner Heisenberg 
+				<input type="radio" name="q10" value="q10d">Stephen Hawking
+
+
+				<br>
+
+
+			<button id = done_button>Done!</button>
+
+		</div>
+
+
+
+
+		
+		<div id = end_container>
+			
+			<img id = "bbLogo" src = "assets/images/BBlogo.png" height="300px" width="800px">
+
+			<h1 id = "score">Score</h1>
+			<br>
+
+			<h1>Correct Answers: <span id = "correct_answers">0</span></h1>
+			<h1>Incorrect Answers: <span id = wrong_answers>0</span></h1>
+			<h1>Unanswered: <span id = "unanswered">0</span></h1>
+		</div>
+			
+
+
+
+		
+		
+		
+	</body>
 </html>
